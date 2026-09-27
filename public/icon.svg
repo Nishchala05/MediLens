@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="medGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="lensGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#f0fdfa" stop-opacity="0.6" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#042f2e" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#medGrad)" />
+  
+  <!-- Subtle circular accent -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="4" stroke-dasharray="12 12" />
+  
+  <!-- Medical Cross behind lens -->
+  <g fill="#ffffff" fill-opacity="0.95" filter="url(#shadow)">
+    <rect x="232" y="140" width="48" height="150" rx="14" />
+    <rect x="180" y="192" width="150" height="48" rx="14" />
+  </g>
+
+  <!-- Magnifying Lens Ring -->
+  <circle cx="256" cy="240" r="110" fill="url(#lensGrad)" stroke="#ffffff" stroke-width="18" filter="url(#shadow)" />
+  
+  <!-- Lens Glint -->
+  <path d="M 210 180 A 80 80 0 0 1 290 180" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-opacity="0.75" />
+  
+  <!-- Handle -->
+  <line x1="335" y1="320" x2="410" y2="395" stroke="#ffffff" stroke-width="26" stroke-linecap="round" filter="url(#shadow)" />
+  <line x1="345" y1="330" x2="400" y2="385" stroke="#0d9488" stroke-width="12" stroke-linecap="round" />
+
+  <!-- Heart pulse line inside lens -->
+  <path d="M 195 240 L 225 240 L 238 215 L 255 265 L 270 230 L 285 245 L 315 245" fill="none" stroke="#0d9488" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "Remix MediLens - Human-Friendly Medical Lab Report Explainer",
+  "description": "Transforms medical laboratory reports into clear, everyday human explanations grounded in MBBS textbooks, with practical meal-level nutrition guidance and doctor discussion questions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
